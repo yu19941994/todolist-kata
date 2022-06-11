@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "6b2db84b-2b91-4f30-85bd-ec47ff7d6ef2",
+		"name": "Todolist-kata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OPTIONS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增代辦",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"標題\"\n}"
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos/dff9c2f5-485e-4387-a889-f28cc80b59de",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"dff9c2f5-485e-4387-a889-f28cc80b59de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"yaya\"\n}"
+				},
+				"url": {
+					"raw": "https://hidden-badlands-12569.herokuapp.com/todos/dff9c2f5-485e-4387-a889-f28cc80b59de",
+					"protocol": "https",
+					"host": [
+						"hidden-badlands-12569",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"dff9c2f5-485e-4387-a889-f28cc80b59de"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
